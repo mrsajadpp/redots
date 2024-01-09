@@ -1,5 +1,6 @@
 // Get all the buttons with the specified class
 const buttons = document.querySelectorAll('.menu-bar .menu-group ul li a button');
+const activeBtn = document.querySelectorAll('.active');
 
 // Iterate through each button and add event listeners
 buttons.forEach(button => {
@@ -17,6 +18,15 @@ buttons.forEach(button => {
             icon.classList.remove('material-icons');
             icon.classList.add('material-icons-outlined');
         });
+    }
+
+});
+
+activeBtn.forEach(button => {
+    if (button.classList.contains('active')) {
+        const icon = button.querySelector('.material-icons-outlined');
+        icon.classList.remove('material-icons-outlined');
+        icon.classList.add('material-icons');
     }
 
 });
