@@ -17,7 +17,7 @@ header {
     position: fixed;
     top: 0px;
     background: #fff;
-    z-index: 999;
+    z-index: 998;
 }
 
 header .menu-area {
@@ -189,6 +189,7 @@ header .menu-icons button img {
     position: fixed;
     top: 0px;
     transition: display 0.3s ease-in-out;
+    z-index: 999;
 }
 
 .menu-bar {
@@ -296,6 +297,7 @@ header .menu-icons button img {
     align-items: center;
     justify-content: start;
     color: #000;
+    font-size: 14px;
 }
 
 .menu-bar .menu-group hr {

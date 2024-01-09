@@ -21,6 +21,27 @@ buttons.forEach(button => {
 
 });
 
+const footerBtn = document.querySelectorAll('footer ul li a button');
+
+footerBtn.forEach(button => {
+    if (!button.classList.contains('active')) {
+        button.addEventListener('mouseover', () => {
+            // Change the class to 'material-icons' when hovered
+            const icon = button.querySelector('.material-icons-outlined');
+            icon.classList.remove('material-icons-outlined');
+            icon.classList.add('material-icons');
+        });
+
+        button.addEventListener('mouseout', () => {
+            // Revert the class to 'material-icons-outlined' when not hovered
+            const icon = button.querySelector('.material-icons');
+            icon.classList.remove('material-icons');
+            icon.classList.add('material-icons-outlined');
+        });
+    }
+
+});
+
 // Get the button with the specified class
 const favoriteButton = document.querySelector('.menu-bar .menu-group ul li a button.heart');
 
