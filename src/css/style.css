@@ -17,6 +17,7 @@ header {
     position: fixed;
     top: 0px;
     background: #fff;
+    z-index: 999;
 }
 
 header .menu-area {
@@ -137,6 +138,7 @@ header .menu-icons button img {
     top: 70px;
     overflow: scroll;
     background: #fff;
+    box-shadow: 0px -9px 10px;
 }
 
 .keywords-container::-webkit-scrollbar {
@@ -384,7 +386,7 @@ header .menu-icons button img {
 span {
     text-decoration: none;
     color: rgb(96, 96, 96);
-    font-size: 14px;
+    font-size: 10px;
 }
 
 /* Footer */
@@ -400,6 +402,9 @@ footer {
     justify-content: center;
     background-color: #fff;
     /* backdrop-filter: blur(5px); */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0px 9px 10px;
 }
 
 footer ul {
@@ -417,24 +422,44 @@ footer ul li {
     height: 100%;
 }
 
-footer ul li a button {
+footer ul li a {
     width: 100%;
     height: 100%;
+    /* background: transparent; */
+    border: none;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer ul li a button {
+    width: 40px;
+    height: 40px;
     background: transparent;
     border: none;
     transition: background 0.3s ease-in-out;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer ul li a button span {
+/* footer ul li a button span {
     color: #000;
-}
+} */
 
 footer ul li a button.active {
-    background: #ddd;
+    /* background: #ddd; */
+    background: #efefef;
+    border: 1px solid #ddd;
 }
 
 footer ul li a button:hover {
-    background: #ddd;
+    /* background: #ddd; */
+    background: #efefef;
+    border: 1px solid #ddd;
 }
 
 /* Responsive 768px */
