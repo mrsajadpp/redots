@@ -25,8 +25,10 @@ buttons.forEach(button => {
 activeBtn.forEach(button => {
     if (button.classList.contains('active')) {
         const icon = button.querySelector('.material-icons-outlined');
-        icon.classList.remove('material-icons-outlined');
-        icon.classList.add('material-icons');
+        if (icon) {
+            icon.classList.remove('material-icons-outlined');
+            icon.classList.add('material-icons');
+        }
     }
 
 });
