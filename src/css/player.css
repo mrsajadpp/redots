@@ -109,8 +109,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    background: #fff;
 }
 
 .mobile-player .video-player video {
