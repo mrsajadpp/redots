@@ -96,7 +96,7 @@
 }
 
 .mobile-player {
-    display: flex;
+    display: none;
     align-items: center;
     margin-top: calc(70px + 60px);
     flex-direction: column;
