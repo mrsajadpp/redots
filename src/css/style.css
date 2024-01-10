@@ -140,6 +140,7 @@ header .menu-icons button img {
     overflow: scroll;
     background: #fff;
     box-shadow: 0px -9px 10px;
+    z-index: 997;
 }
 
 .keywords-container::-webkit-scrollbar {

@@ -1,0 +1,192 @@
+.desktop-player {
+    margin-top: calc(70px + 60px);
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+    /* padding: 10px; */
+}
+
+.desktop-player .video-player {
+    width: 960px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    padding: 10px;
+}
+
+.desktop-player .video-player video {
+    width: 100%;
+    height: 100%;
+}
+
+.desktop-player .video-suggestions-container {
+    height: calc(100vh - (70px + 60px));
+    width: 500px;
+    overflow: scroll;
+}
+
+.desktop-player .video-suggestions-container::-webkit-scrollbar {
+    display: none;
+}
+
+.desktop-player .video-suggestions {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fefefe;
+    border-radius: 8px;
+}
+
+.desktop-player .video-suggestions .episode {
+    /* width: 100%; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    flex-direction: row;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.desktop-player .video-suggestions .episode.active {
+    background-color: #ddd;
+}
+
+.desktop-player .video-suggestions .episode:hover {
+    background-color: #ddd;
+}
+
+.desktop-player .video-suggestions .episode .episode-thumbnail {
+    width: 160px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-player .video-suggestions .episode .episode-thumbnail img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.desktop-player .video-suggestions .episode .episode-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.desktop-player .video-suggestions .episode .episode-info h3 {
+    font-size: 14px;
+}
+
+.mobile-player {
+    display: flex;
+    align-items: center;
+    margin-top: calc(70px + 60px);
+    flex-direction: column;
+    padding: 10px;
+}
+
+.mobile-player .video-player {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-player .video-player video {
+    width: 95%;
+    margin: 10px;
+}
+
+.mobile-player .episode-container {
+    width: 100%;
+    height: fit-content;
+    overflow: scroll;
+}
+
+.mobile-player .episode-container .episodes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-player .episode-container .episodes .episode {
+    /* width: 100%; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    flex-direction: row;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.mobile-player .episode-container .episodes .episode.active {
+    background-color: #ddd;
+}
+
+.mobile-player .episode-container .episodes .episode:hover {
+    background-color: #ddd;
+}
+
+.mobile-player .episode-container .episodes .episode .episode-thumbnail {
+    width: 160px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-player .episode-container .episodes .episode .episode-thumbnail img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-player .episode-container .episodes .episode .episode-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.mobile-player .episode-container .episodes .episode .episode-info h3 {
+    font-size: 14px;
+}
+
+/* Responsive 768px */
+
+@media (max-width: 768px) {
+    .desktop-player {
+        display: none !important;
+    }
+
+    .mobile-player {
+        display: flex !important;
+    }
+}
